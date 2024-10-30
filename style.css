@@ -1,0 +1,82 @@
+section{
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    background: tomato;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius:15px;
+    text-align:center ;
+    color: black;
+    font-size: medium;
+    font-family: sans-serif;
+    
+
+}
+a:hover{
+    background-color: gray;
+    color: #fff;
+}
+a:visited{
+    background-color: aqua;
+}
+a:active{
+    background-color: blueviolet;
+}
+a:focus{
+    font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+}
+ul{
+    background: gray;
+    padding:15px;
+list-style: inside;
+position: relative;
+
+
+}
+li{
+    color:black;
+    font-size: 20px;
+    list-style-type: square;
+    overflow: hidden;
+ 
+}
+/*body{
+    background-image: url(miami.jpg);
+    background-size:200px 200px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:hidden;
+    
+
+
+}*/
+body::before{
+    content: "Element";
+    background-image: url(miami.jpg);
+    background-size: cover;
+  background-size: 200px 200px;
+  
+}
+body::after{
+    content: "Element";
+    background-image: url(miami.jpg);
+    background-size: cover;
+  background-size: 200px 200px;
+}
+p{
+    font-family: 'Courier New', Courier, monospaces;
+}
+p::first-line{
+    color:tomato;
+    text-transform: uppercase;
+}
+p::first-letter{
+    font-size:60px ;
+}p::selection{
+    background-color: rgba(0, 0, 255, 0.521);
+    color: aliceblue;
+}
